@@ -1,12 +1,14 @@
 import { View } from "react-native";
 
-import { HomeGame } from "./screens";
 import { styles } from "./styles";
+import { Header } from "../../components";
 
-export default function App() {
+const HomeGame = () => {
   return (
     <View style={styles.container}>
-      <HomeGame />
+      <Header title="Welcome" />
     </View>
   );
-}
+};
+
+export default HomeGame;
