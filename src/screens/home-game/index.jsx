@@ -1,12 +1,13 @@
 import { View } from "react-native";
 
 import { styles } from "./styles";
-import { Header } from "../../components";
+import { Header, Card } from "../../components";
 
 const HomeGame = () => {
   return (
     <View style={styles.container}>
       <Header title="Welcome" />
+      <Card />
     </View>
   );
 };
