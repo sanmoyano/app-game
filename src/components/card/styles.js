@@ -14,5 +14,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 1.41,
     elevation: 2,
     paddingVertical: 20,
+    borderRadius: 12,
   },
 });
