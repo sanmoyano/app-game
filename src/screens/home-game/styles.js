@@ -38,4 +38,7 @@ export const styles = StyleSheet.create({
     justifyContent: "space-around",
     marginTop: 20,
   },
+  button: {
+    width: 100,
+  },
 });

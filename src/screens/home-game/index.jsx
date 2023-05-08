@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, TextInput, Button } from "react-native";
+import { View, Text, TextInput, Button, Alert } from "react-native";
 
 import { styles } from "./styles";
 import { Header, Card } from "../../components";
@@ -9,6 +9,9 @@ const HomeGame = () => {
   const [numberOption, setNumberOption] = useState("");
   const onHandlerChangeText = (text) => {
     setNumberOption(text.replace(/[^0-9]/g, ""));
+  };
+  const onHandlerConfirm = () => {
+    const choosenNumber = Number(numberOption);
   };
 
   return (
@@ -29,8 +32,12 @@ const HomeGame = () => {
           value={numberOption}
         />
         <View style={styles.buttonContainer}>
-          <Button title="Reset" onPress={() => {}} color={theme.colors.primary} />
-          <Button title="Confirm" onPress={() => {}} color={theme.colors.primary} />
+          <View style={styles.button}>
+            <Button title="Reset" onPress={() => {}} color={theme.colors.primary} />
+          </View>
+          <View style={styles.button}>
+            <Button title="Confirm" onPress={() => {}} color={theme.colors.primary} />
+          </View>
         </View>
       </Card>
     </View>
