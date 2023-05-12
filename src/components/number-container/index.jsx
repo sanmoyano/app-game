@@ -1,7 +1,13 @@
+import { View, Text } from "react-native";
 
-const validate_email(email):
-    regex = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    if re.match(regex, email):
-        return True
-    else:
-        return False
+import { styles } from "./styles";
+
+const NumberContainer = ({ number }) => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.number}>{number}</Text>
+    </View>
+  );
+};
+
+export default NumberContainer;

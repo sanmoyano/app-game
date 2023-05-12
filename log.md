@@ -1,7 +1,7 @@
 ## 26/04/2023
 Repo proyecto nuevo -> https://github.com/sotopro/peoplevsnumbers
 ## ESLint
-npm I -D eslint eslint-config-universe prettier
+npm i -D eslint eslint-config-universe prettier
 "eslintConfig": {
     "extends": "universe/native"
   }
@@ -26,3 +26,10 @@ Con el ternary operator no pasa. Devolvemos null
 Los componentes se actualizan cuando cambia su estado o su propiedad
 - Controlar fuentes en la app -> npm install expo-font
 - En la App hay que importar el hook useFont de expo. Este hook recibe un array de objetos con las fuentes que vamos utilizar.
+
+## 8/05/2023
+Responsividad y reglas flexibles. 
+- Reglas flexibles para que responda a diferentes dispositivos. 
+- Cual seria la resolucion mas grande y mas pequena que nuestra aplicacion se va mostrar. 
+- Dimension y orientacion -> capturar la dimension del dispositivo 
+   * Dimensions: ventana sin barra de estado, pantalla incluye la barra de estado. 
